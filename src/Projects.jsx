@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-card">
           <img src={p4} alt="Personal Portfolio Website" className="project-image" />
           <div className="project-content">
-            <a href="https://portfolio.example.com" className="project-link">
+            <a href="https://master--madhuri-portfolio.netlify.app/" className="project-link">
               <h3 className="project-title">Personal Portfolio Website</h3>
             </a>
             <p className="project-description">
