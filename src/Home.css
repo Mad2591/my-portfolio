@@ -1,0 +1,83 @@
+/* Home.css */
+
+:root {
+    --primary-color: #007BFF; /* Light Blue */
+    --secondary-color: #1a1a2e; /* Dark Blue */
+    --text-color: #ffffff; /* White */
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--secondary-color);
+  }
+  
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .home-content {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+  }
+  
+  .profile-photo-container {
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+  }
+  
+  .animated {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .home-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .home-subheading {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .home-description {
+    font-size: 1.2em;
+    color: var(--text-color);
+  }
+  
+  .glow-text {
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+    }
+    to {
+      text-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color), 0 0 40px var(--primary-color);
+    }
+  }
+  

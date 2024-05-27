@@ -1,0 +1,104 @@
+/* About.css */
+
+:root {
+  --primary-color: #007BFF; /* Light Blue */
+  --secondary-color: #1a1a2e; /* Dark Blue */
+  --text-color: #ffffff; /* White */
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.about {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* About.css */
+
+/* About.css */
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 1;
+}
+
+/* About.css */
+
+.card-info {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left; /* Align text to the left */
+}
+
+
+.card .title {
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+}
+
+/* Hover */
+.card:hover .card-info {
+  color: var(--primary-color);
+  transition: color 1s;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+  padding-left: 20px; /* Adjust the padding as needed */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

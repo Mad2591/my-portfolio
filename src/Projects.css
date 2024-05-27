@@ -1,0 +1,62 @@
+/* Projects.css */
+
+.projects {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .projects-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF; /* Adjust color as needed */
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    position: relative;
+    width: 280px; /* Increased width */
+    height: 350px; /* Increased height */
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(173, 216, 230, 0.3); /* Light blue shadow */
+    transition: transform 0.3s ease; /* Popup effect transition */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Popup effect on hover */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Adjust color as needed */
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF; /* Heading title color */
+  }
+  
+  .project-description {
+    font-size: 1em;
+    color: #ffffff; /* Project description color */
+    margin-bottom: 15px;
+  }
+  
